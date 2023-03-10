@@ -1,0 +1,41 @@
+/*
+    Document   : print
+    Created on : Oct 4, 2014, 12:41:07 AM
+    Author     : naoshad
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root {
+    display: block;
+}
+body {
+    background: white;
+    font-size: 13pt;
+    padding: 0px;
+    margin: 0px;
+}
+.print-btn{display:none;}
+.page-header{display:none;}
+.page-footer{display:none;}
+.portlet-title{display:none;}
+.scroll-to-top{display:none!important;}
+.invoice{display: block!important;}
+/* Default left, right, top, bottom margin is 2cm */
+@page { margin: 2cm }
+
+/* First page, 10 cm margin on top */
+@page :first {
+    margin-top: 5cm;
+}
+
+/* Left pages, a wider margin on the left */
+@page :left {
+    margin-left: 2cm;
+    margin-right: 2cm;
+}
+
+@page :right {
+    margin-left: 2cm;
+    margin-right: 2cm;
+}
